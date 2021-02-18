@@ -3,13 +3,12 @@ package main
 import "fmt"
 
 func main (){
-	var x, z int
+	var a, b int
 
-	fmt.Printf("perviy", x)
-	fmt.Scanf("первый катет", x)
-	//fmt.Scanf("Второй катет", z)
+	print("Введите катет a и b \n")
+	fmt.Scanf("%d %d", &a, &b)
 
-	var y int
-	y = ((x * x) + (z * z))
-	fmt.Printf("Результат", y)
+	var x int
+	x = ((a * a) + (b * b))
+	fmt.Printf("Результат %d \n", x)
 }
